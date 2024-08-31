@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+       
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ::-webkit-input-placeholder{
+            font-size: 15px;
+            
+        }
+        body {
+          background-image: url('doctor_login_page.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        #doc{
+            font-size: 39px;
+            margin-left: 500px;
+            margin-top: 8px;
+            color: whitesmoke;
+        }
+        #Welcome{
+            background-color: white;
+            color: black;
+            padding: 60px 0px 60px 0px; 
+            margin: 100px 250px 0px 730px;
+            border: 3px solid blueviolet;
+
+            border-radius: 40px;
+
+        }
+
+        </style>
+        
+        
+
+    </head>
+    <body>
+
+ <span>   
+    <h3 id="doc" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Online Doctor Searching</h3>
+</span>
+
+        <div  id="Welcome">
+        <form action="Login.jsp" method="post">
+    <center><h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        WELCOME!
+    </h3></center><br>
+
+   <center><input type="text" name="username" id="uname" placeholder="Your Username / id" value="" style="height: 50px; width : 400px; border-radius: 30px;font-size: 18px; padding-left:20px ;font-weight: bold;"maxlength="25" required></center> <br>
+
+   <center><input type="password" name="password" id="pass" value="" placeholder="Password"style="height: 50px; width : 400px; border-radius: 30px; font-size: 18px;padding-left:20px ;font-weight: bold;" maxlength="25" required></center> 
+   <a href="ChangePass.html" style="padding-left: 330px">Change Password</a><br><br><br>
+
+
+   <center><input type="radio" name="who" value="admin" required> Admin
+       <input type="radio" name="who" value="patient" required> Patient 
+       <input type="radio" name="who" value="doctor" required> Doctor</center><br>
+
+       <center> <input type="submit" value="Login" style="height: 40px; width : 120px; border-radius: 5px; background-color: blue; color: white;font-weight:bold;" ></center><br>
+
+
+
+
+
+<br><br>
+
+<center> Don't have an account ? Sign up </center><br>
+  
+        </form>
+  
+  <button onclick="window.location.href='pre_admin.html'" style="margin-left: 100px; background-color: darkorange; color: black; width: 85px; height: 30px; font-weight: bold">As Admin</button>
+  
+    <button onclick="window.location.href='Doctor_reg.html'" style="margin-left: 30px; background-color: darkgoldenrod; color: black; width: 85px; height: 30px; font-weight: bold">As Doctor</button>
+  <button onclick="window.location.href='Patient_reg.html'" style="margin-left: 30px; background-color: darkseagreen;color: black ; width: 85px; height: 30px; font-weight: bold">As Patient</button>
+
+
+ </div>
+
+<script>
+
+
+</script>
+
+
+    
+</body>
+
+</html>

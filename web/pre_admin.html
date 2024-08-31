@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>pre admin registration form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+
+        form {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        input[type=submit] {
+            height: 35px;
+            width: 90px;
+            margin-top: 50px;
+            border-radius: 15px;
+            background-color: greenyellow;
+            color: black;
+            font-size: 20px;
+        }
+        input[type=text]
+        {
+            width: 200px;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 20px;
+            font-weight: bold;
+        }
+
+        input[type=password]
+        {
+            width: 200px;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 20px;
+            font-weight: bold;
+
+        }
+        
+              body {
+          background-image: url('pre_admin_photo.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          color: white;
+          font-weight: bold;
+        }
+        table, tr,td{
+            font-size: 18px;
+            padding-left: 10px;
+        }
+    </style>
+
+
+        
+        
+    </head>
+    <body>
+    <center>
+        <form action="pre_admin_reg.jsp" method="post">
+            
+            <h2>Admin Pre-Registration Page</h2><br><br>
+            <table>
+                <tr>
+                    <td>
+                        <label for="hr"><b>Admin Name :</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="hr" name="name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password"><b>HR Password:</b></label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" required>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="next">
+        </form>
+    </center>
+
+</body>
+</html>

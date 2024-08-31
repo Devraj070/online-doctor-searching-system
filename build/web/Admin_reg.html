@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+     body{
+            background-color: beige;
+        }
+        h3{
+            font-size: 25px;
+        }
+        label{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input[type=text]{
+            padding: 10px;
+        
+            border-radius: 15px;
+        }
+        input[type=submit]{
+            background-color: blueviolet;
+            height: 35px;
+            width: 140px;
+            color: white;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        input[type=password]
+        {
+            border-radius: 15px;
+            padding: 5px;
+        }
+         input[type=number]
+        {
+            border-radius: 15px;
+            padding: 5px;
+        }
+        
+         input[type=email]
+        {
+            border-radius: 15px;
+            padding: 5px;
+        }
+        Select{
+            border-radius: 15px;
+            height: 35px;
+            width: 140px;
+        }
+        
+        
+              body {
+          background-image: url('admin2.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          font-weight: bold;
+        }
+</style>
+    </head>
+    <body>
+            <center>
+                <form action="Admin_reg.jsp" method="post">
+        <h3>Admin Registration</h3>
+        <table>
+            <tr>
+                <td>
+                    <label for="Name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="Name" name="name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Qualification">Qualification:</label>
+                </td>
+                <td>
+                    <Select name="Qualification" id="Quaalification" required>
+                        <option >Select</option>
+                    <option>MCA</option>
+                    <option>BCA</option>
+                    <option>B.Sc (Computer Science)</option>
+                    <option>B.Tech(CSE)</option>
+                    </Select>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="User">Username:</label>
+                </td>
+                <td>
+                    <input type="text" id="User" name="username" required>
+                </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="Password" name="password" required>
+                    </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="Gender">Gender:</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="Gender" name="sex" value="Male" required>Male
+                            <input type="radio" id="Gender" name="sex" value="female" required>Female
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Age">Age:</label></td>
+                            <td>
+                                <input type="number" id="Age" name="age" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Contact">Conact No:</label></td>
+                            <td>
+                                <input type="number" id="Contact" name="mobile" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Email">Email Id:</label></td>
+                            <td>
+                                <input type="email" id="Email" name="email" required>
+                            </td>
+                        </tr>
+
+
+                       <tr>
+                        <td>
+                            <label for="State">State:</label>
+                        </td>
+                        <td>
+                            <select name="state" id="State" required >
+                                <option value="Select">Select </option>
+                                <option>Odisha</option>
+                                <option>Uttar pradesh</option>
+                            </select>
+                        </td>
+                       </tr>
+                       
+        </table>
+        <br>
+        <input type="checkbox" name="name" required>I am declaring that the above details are true.
+        <br>
+<br>
+        <input type="submit" value="Register">
+    </form>
+    </center>
+    </body>
+</html>
+
+
+
